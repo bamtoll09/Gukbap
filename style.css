@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-top {
+    height: 7vw;
+}
+
+.main-bg {
+    width: 100vw;
+    height: auto;
+    background-image: url("./asdf.jpg");
+    position: absolute;
+    z-index: -10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.header {
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15vw;
+}
+
+.phone {
+    width: 20vw;
+    height: auto;
+    transition-duration: 1s;
+}
+
+.phone:hover {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+}
+
+.contents {
+    margin-top: 3vw;
+}
+
+.description {
+    height: 20vh;
+
+}
