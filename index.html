@@ -1,7 +1,7 @@
 <!DOCKTYPE HTML>
     <html>
 
-    <head lang="kr">
+    <head lang="ko">
         <meta chartset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- jQuery -->
@@ -18,18 +18,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
+
+        <!-- favicon -->
+        <link rel='icon' type='image/x-icon' href='/images/favicon.ico'>
+		
+		<!-- Font Awesome icons (free version) -->
+		<script src='https://use.fontawesome.com/releases/v5.15.3/js/all.js' crossorigin='anonymous'></script>
+
         <!-- custom -->
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="./style-nav.css" />
+        <link rel="stylesheet" href="./style-carousel.css" />
         <script type="text/javascript" src="./script.js"></script>
         <script type="text/javascript" src="./script-nav.js"></script>
+        <script type="text/javascript" src="./script-carousel.js"></script>
     </head>
 
-    <body id="a1" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="80" class="scrollspy-example"
+    <body id="a1" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="280" class="scrollspy-example"
         tabindex="0">
 
 
-        <div class="nav navbar navbar-expand-md navbar-inverse fixed-top" role="navigation" id="main-nav">
+        <div class="nav navbar navbar-expand-sm navbar-inverse fixed-top" role="navigation" id="main-nav">
             <div class="container">
                 <div class="navbar-collapse collapse">
                     <div class="small-logo-container">
@@ -72,14 +81,18 @@
             <div class="header">
                 <img class="phone" id="phone" src="./iphone.png" />
                 <div class="header-text" id="header-text">
-                    <span class="display-5 fw-bold">
-                        국 밥 뉴 스
-                    </span>
-                    <span class="lead md-4">
-                        국방 관련 뉴스가 한 곳에!<br>
-                        1초만에 뉴스의 요점을 파악!<br>
-                        필요한 정보들만 수집!
-                    </span>
+                    <div class="row">
+                        <div class="col-md-12 title">
+                            국 밥 뉴 스
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 arg alignRight">
+                            국방 관련 뉴스가 한 곳에!<br>
+                            1초만에 뉴스의 요점을 파악!<br>
+                            필요한 정보들만 수집!
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- 국방일보
@@ -90,21 +103,76 @@
             <div class="contents">
                 <hr class="dropdown-divider">
                 <div class="description bg-light" id="a2">
-                    <h2 class="text-secondary">
+                    <h1 class="text-secondary">
                         신문 데이터 가공
-                    </h2>
+                    </h1>
+
+
+                    <section class="page-section portfolio" id="portfolio">
+                        <div class="container-fluid">
+                            <!-- Portfolio Section Heading-->
+                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">News</h2><!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div><!-- Portfolio Grid Items-->
+                            <div class="row justify-content-center">
+                                <div class="col-1 d-grid"><button class="btn btn-lg" id="newsCarouselLeft"><i class="fa fa-chevron-left"></i></button></div>
+                                <div class="col-10 news-item-wrapper">
+                                    <div class="row news-item active first"><a class="portfolio-item border border-primary border-3 col-3 mx-auto" href="/publishers/1">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div><img class="img-fluid" src="images/portfolio/gookbang.png" alt="..." />
+                                        </a></div>
+                                    <div class="row news-item"><a class="portfolio-item border border-primary border-3 col-3 mx-auto" href="/publishers/2">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div><img class="img-fluid" src="images/portfolio/narasarang.png" alt="..." />
+                                        </a></div>
+                                    <div class="row news-item"><a class="portfolio-item border border-primary border-3 col-3 mx-auto" href="/publishers/3">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div><img class="img-fluid" src="images/portfolio/yuksa.png" alt="..." />
+                                        </a></div>
+                                    <div class="row news-item"><a class="portfolio-item border border-primary border-3 col-3 mx-auto" href="/publishers/4">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div><img class="img-fluid" src="images/portfolio/gongsa.png" alt="..." />
+                                        </a></div>
+                                    <div class="row news-item last"><a class="portfolio-item border border-primary border-3 col-3 mx-auto" href="/publishers/5">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div><img class="img-fluid" src="images/portfolio/haesa.png" alt="..." />
+                                        </a></div>
+                                </div>
+                                <div class="col-1 d-grid"><button class="btn btn-lg" id="newsCarouselRight"><i class="fa fa-chevron-right"></i></button></div>
+                            </div>
+                        </div>
+                    </section>
+
+
                 </div>
                 <hr class="dropdown-divider">
                 <div class="description bg-light" id="a3">
-                    <h2 class="text-secondary">
-                        키워드 추출 및 분석
-                    </h2>
+                    <div class="text right">
+                        <h1 class="text-primary">
+                            키워드 추출 및 분석
+                        </h1>
+                        <p class="text-secondary">
+                            익스트림 다이내믹 레인지의 XDR, 이제 12.9형 iPad Pro에서.2
+                        </p>
+                        <p class="desc-desc text-break">
+                            Liquid Retina XDR 디스플레이는 1,000,000:1 명암비로 생동감 넘치는 디테일을 구현합니다. HDR 사진 및 동영상을 시청하고 편집하거나, 좋아하는 영화 및 TV 프로그램을 즐기기에 제격이죠. 게다가 경이로운 1000 니트의 전체 화면 밝기와 1600 니트의 피크 밝기를 자랑합니다. P3의 넓은 색영역, True Tone, ProMotion 등의 첨단 디스플레이 기술도 갖추고 있죠.
+                        </p>
+                    </div>
+                    <img class="image" src="./ipad.PNG">
                 </div>
                 <hr class="dropdown-divider">
                 <div class="description bg-light" id="a4">
-                    <h2 class="text-secondary">
+                    <h1 class="text-secondary">
                         분석 정보 시각화
-                    </h2>
+                    </h1>
                 </div>
                 <!-- <hr class="dropdown-divider">
                 <div class="description1 page-section portfolio bg-light container-fluid">

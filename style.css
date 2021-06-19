@@ -40,14 +40,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 15vw;
+  margin: 0 8vw 0 15vw;
 }
 
 .header-text {
   width: 100%;
-  height: 20vw;
+  height: 27vw;
   display: flex;
-  margin-left: 20px;
+  margin-left: 5vw;
   flex-direction: column;
   justify-content: space-between;
 
@@ -57,8 +57,18 @@ body {
   transform: translateX(20px);
 }
 
-.header-text > span:last-child {
+.alignRight {
   text-align: right;
+}
+
+.title {
+  font-size: calc(1.425rem + 2.1vw);
+  line-height: 1.2;
+}
+
+.arg {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .phone {
@@ -82,14 +92,119 @@ body {
   margin-top: 3vw;
 }
 
-.description {
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  padding-top: var(--scrollspy-offset);
-}
-
 .fadeIn {
   opacity: 1;
   transform: translateX(0px);
+}
+
+@media (min-width: 300px) {
+  .title {
+    font-size: calc(0.425rem + 4vw);
+    font-weight: 700;
+  }
+
+  .arg {
+    font-size: calc(0.425rem + 1vw);
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: calc(0.625rem + 4vw);
+    font-weight: 700;
+  }
+
+  .arg {
+    font-size: calc(0.625rem + 1vw);
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 700px) {
+  .title {
+    font-size: 5.5vw;
+    font-weight: 700;
+  }
+
+  .arg {
+    font-size: 2.5vw;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1000px) {
+  .title {
+    font-size: calc(1.425rem + 3vw);
+    line-height: 1.2;
+  }
+
+  .arg {
+    font-size: 2.5vw;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: calc(1.425rem + 3vw);
+    line-height: 1.2;
+  }
+
+  .arg {
+    font-size: 2.7vw;
+    font-weight: 300;
+  }
+}
+
+/* description */
+.description:first-child {
+  height; auto;
+}
+
+.description {
+  height: 100vw;
+  width: 100%;
+  text-align: center;
+  padding-top: var(--scrollspy-offset);
+  position: static;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.desc-desc {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description > .text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.description > .image {
+  width: calc(100% - 200px);
+  height: auto;
+  display: flex;
+}
+
+.description > .left {
+  align-self: flex-start;
+}
+
+.description > .full-left {
+  align-self
+}
+
+.description > .right {
+}
+
+.description > .full-right {
+  
+}
+
+.description > .center {
+  align-self: center;
 }
